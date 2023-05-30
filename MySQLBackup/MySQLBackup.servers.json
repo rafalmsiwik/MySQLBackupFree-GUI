@@ -1,0 +1,17 @@
+{
+  "Config": {
+    "app": "MySQLBackup",
+    "version": "ver. 1.49-7",
+    "showDirectory": "Yes",
+    "showMessageInfo": "Yes"
+  },
+  "servers": [
+    {
+      "server": "127.0.0.1",
+      "port": "3306",
+      "pass": "FG5T3UWbaBE=",
+      "login": "rafal",
+      "defaultBackupFolder": "E:\\BACKUP"
+    }
+  ]
+}
