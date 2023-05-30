@@ -1,7 +1,7 @@
 {
   "Config": {
     "app": "MySQLBackup",
-    "version": "ver. 1.49-7",
+    "version": "ver. 1.50-7",
     "showDirectory": "Yes",
     "showMessageInfo": "Yes"
   },
