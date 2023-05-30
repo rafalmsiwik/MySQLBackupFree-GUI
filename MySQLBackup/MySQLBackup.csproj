@@ -5,12 +5,12 @@
     <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <Authors>Rafal M Siwik</Authors>
+    <Company>$(Authors) </Company>
+    <Product>$(AssemblyName) 2023</Product>
+    <Copyright>Rafal M Siwik</Copyright>
+    <PackageProjectUrl>https://netcode.one</PackageProjectUrl>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Content Include="Icon.ico" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
