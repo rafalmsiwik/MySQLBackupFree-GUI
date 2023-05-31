@@ -1,4 +1,4 @@
 # MySQLBackupFree
 MySQLBackupFree C# Json
 
-![MySQLBackup](https://github.com/rafalmsiwik/MySQLBackupFree/assets/65105887/9c2c8f6b-afd0-4ce2-ad16-5678bb60aae3)
+![MySQLBackup2](https://github.com/rafalmsiwik/MySQLBackupFree-GUI/assets/65105887/fa404c4b-0445-4cb7-928a-f061469a2f1a)
