@@ -11,4 +11,4 @@ To backup the databases, we need to fetch a list of databases from the server an
 All settings are in Json file and you can edit and add MySql servers. The password is encrypted before writing.
 
 # Contakt
-Rafal Siwik [netcode.one](https://www.google.com)
+Rafal Siwik [netcode.one](https://www.netcode.one)
