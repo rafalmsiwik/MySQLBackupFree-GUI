@@ -9,3 +9,6 @@ It is based on MySql.Data.DLL, MySqlConnector.DLL and Devart.Express.MySql.DLL
 
 To backup the databases, we need to fetch a list of databases from the server and select the ones to be backed up. After making a backup, the program will check which backups are available and mark those databases that can be recovered.
 All settings are in Json file and you can edit and add MySql servers. The password is encrypted before writing.
+
+# Contakt
+Rafal Siwik [netcode.one](https://www.google.com)
