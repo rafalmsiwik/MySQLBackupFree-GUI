@@ -1201,14 +1201,14 @@ namespace MySQLBackup
         }
 
         private void VisitLink()
-        {
-            System.Diagnostics.Process.Start(new ProcessStartInfo
-            {
-                FileName = "https://netcode.one",
-                UseShellExecute = true
-            });
+        {        
+            var uri = "https://netcode.one";
+            var psi = new System.Diagnostics.ProcessStartInfo();
+            psi.UseShellExecute = true;
+            psi.FileName = uri;
+            System.Diagnostics.Process.Start(psi);
         }
-   
+
 
 
         //

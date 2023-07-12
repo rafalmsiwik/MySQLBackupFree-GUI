@@ -97,7 +97,7 @@
             toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             toolStripStatusLabel2.Size = new System.Drawing.Size(496, 17);
             toolStripStatusLabel2.Spring = true;
-            toolStripStatusLabel2.Text = "https://netcode.one";
+            toolStripStatusLabel2.Text = "netcode.one";
             toolStripStatusLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             toolStripStatusLabel2.Click += toolStripStatusLabel2_Click;
             // 
