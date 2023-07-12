@@ -1082,7 +1082,7 @@ namespace MySQLBackup
         }
         private void toolStripStatusLabelVersion_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void checkBoxShowDirectory_CheckedChanged(object sender, EventArgs e)
@@ -1144,7 +1144,7 @@ namespace MySQLBackup
             }
         }
 
-       
+
 
         private void checkBoxShowMessageInfo_CheckedChanged(object sender, EventArgs e)
         {
@@ -1177,7 +1177,7 @@ namespace MySQLBackup
             if (!appVisible)
             {
                 this.Show();
-                this.WindowState = FormWindowState.Normal;               
+                this.WindowState = FormWindowState.Normal;
                 appVisible = true;
             }
             else if (appVisible)
@@ -1187,6 +1187,29 @@ namespace MySQLBackup
                 appVisible = false;
             }
         }
+
+        private void toolStripStatusLabel2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                VisitLink();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to open link that was clicked.");
+            }
+        }
+
+        private void VisitLink()
+        {
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://netcode.one",
+                UseShellExecute = true
+            });
+        }
+   
+
 
         //
     }

@@ -33,6 +33,7 @@
             statusStrip1 = new System.Windows.Forms.StatusStrip();
             toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             toolStripStatusLabelVersion = new System.Windows.Forms.ToolStripStatusLabel();
+            toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             button7 = new System.Windows.Forms.Button();
             button8 = new System.Windows.Forms.Button();
             button9 = new System.Windows.Forms.Button();
@@ -70,32 +71,41 @@
             // statusStrip1
             // 
             statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripStatusLabel1, toolStripStatusLabelVersion });
-            statusStrip1.Location = new System.Drawing.Point(0, 491);
+            statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripStatusLabel1, toolStripStatusLabelVersion, toolStripStatusLabel2 });
+            statusStrip1.Location = new System.Drawing.Point(0, 366);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            statusStrip1.Size = new System.Drawing.Size(673, 26);
+            statusStrip1.Size = new System.Drawing.Size(589, 22);
             statusStrip1.TabIndex = 8;
             statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new System.Drawing.Size(0, 20);
+            toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
             // toolStripStatusLabelVersion
             // 
             toolStripStatusLabelVersion.Name = "toolStripStatusLabelVersion";
-            toolStripStatusLabelVersion.Size = new System.Drawing.Size(60, 20);
+            toolStripStatusLabelVersion.Size = new System.Drawing.Size(47, 17);
             toolStripStatusLabelVersion.Text = "ver 47.7";
             toolStripStatusLabelVersion.Click += toolStripStatusLabelVersion_Click;
             // 
+            // toolStripStatusLabel2
+            // 
+            toolStripStatusLabel2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            toolStripStatusLabel2.IsLink = true;
+            toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            toolStripStatusLabel2.Size = new System.Drawing.Size(496, 17);
+            toolStripStatusLabel2.Spring = true;
+            toolStripStatusLabel2.Text = "https://netcode.one";
+            toolStripStatusLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            toolStripStatusLabel2.Click += toolStripStatusLabel2_Click;
+            // 
             // button7
             // 
-            button7.Location = new System.Drawing.Point(455, 397);
-            button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            button7.Location = new System.Drawing.Point(398, 298);
             button7.Name = "button7";
-            button7.Size = new System.Drawing.Size(86, 51);
+            button7.Size = new System.Drawing.Size(75, 38);
             button7.TabIndex = 11;
             button7.Text = "Backup";
             button7.UseVisualStyleBackColor = true;
@@ -103,10 +113,9 @@
             // 
             // button8
             // 
-            button8.Location = new System.Drawing.Point(567, 397);
-            button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            button8.Location = new System.Drawing.Point(496, 298);
             button8.Name = "button8";
-            button8.Size = new System.Drawing.Size(86, 51);
+            button8.Size = new System.Drawing.Size(75, 38);
             button8.TabIndex = 12;
             button8.Text = "Restore";
             button8.UseVisualStyleBackColor = true;
@@ -114,10 +123,9 @@
             // 
             // button9
             // 
-            button9.Location = new System.Drawing.Point(327, 397);
-            button9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            button9.Location = new System.Drawing.Point(286, 298);
             button9.Name = "button9";
-            button9.Size = new System.Drawing.Size(86, 51);
+            button9.Size = new System.Drawing.Size(75, 38);
             button9.TabIndex = 14;
             button9.Text = "Check Database";
             button9.UseVisualStyleBackColor = true;
@@ -127,21 +135,18 @@
             // 
             groupBox2.Controls.Add(button10);
             groupBox2.Controls.Add(textBoxDefaultBackupFolder);
-            groupBox2.Location = new System.Drawing.Point(11, 270);
-            groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            groupBox2.Location = new System.Drawing.Point(10, 202);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            groupBox2.Size = new System.Drawing.Size(335, 79);
+            groupBox2.Size = new System.Drawing.Size(293, 59);
             groupBox2.TabIndex = 15;
             groupBox2.TabStop = false;
             groupBox2.Text = "Backup Path";
             // 
             // button10
             // 
-            button10.Location = new System.Drawing.Point(292, 29);
-            button10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            button10.Location = new System.Drawing.Point(256, 22);
             button10.Name = "button10";
-            button10.Size = new System.Drawing.Size(34, 27);
+            button10.Size = new System.Drawing.Size(30, 20);
             button10.TabIndex = 1;
             button10.Text = "...";
             button10.UseVisualStyleBackColor = true;
@@ -149,10 +154,9 @@
             // 
             // textBoxDefaultBackupFolder
             // 
-            textBoxDefaultBackupFolder.Location = new System.Drawing.Point(17, 29);
-            textBoxDefaultBackupFolder.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            textBoxDefaultBackupFolder.Location = new System.Drawing.Point(15, 22);
             textBoxDefaultBackupFolder.Name = "textBoxDefaultBackupFolder";
-            textBoxDefaultBackupFolder.Size = new System.Drawing.Size(269, 27);
+            textBoxDefaultBackupFolder.Size = new System.Drawing.Size(236, 23);
             textBoxDefaultBackupFolder.TabIndex = 0;
             // 
             // notifyIcon1
@@ -180,11 +184,9 @@
             groupBox3.Controls.Add(textBoxPassword);
             groupBox3.Controls.Add(textBoxLogin);
             groupBox3.Controls.Add(textBoxPort);
-            groupBox3.Location = new System.Drawing.Point(307, 16);
-            groupBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            groupBox3.Location = new System.Drawing.Point(269, 12);
             groupBox3.Name = "groupBox3";
-            groupBox3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            groupBox3.Size = new System.Drawing.Size(357, 373);
+            groupBox3.Size = new System.Drawing.Size(312, 280);
             groupBox3.TabIndex = 16;
             groupBox3.TabStop = false;
             groupBox3.Text = "MySQL Server";
@@ -192,20 +194,18 @@
             // comboBoxServers
             // 
             comboBoxServers.FormattingEnabled = true;
-            comboBoxServers.Location = new System.Drawing.Point(120, 39);
-            comboBoxServers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            comboBoxServers.Location = new System.Drawing.Point(105, 29);
             comboBoxServers.Name = "comboBoxServers";
-            comboBoxServers.Size = new System.Drawing.Size(172, 28);
+            comboBoxServers.Size = new System.Drawing.Size(151, 23);
             comboBoxServers.TabIndex = 17;
             comboBoxServers.SelectedIndexChanged += comboBoxServers_SelectedIndexChanged;
             // 
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new System.Drawing.Point(120, 188);
-            checkBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            checkBox1.Location = new System.Drawing.Point(105, 141);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new System.Drawing.Size(132, 24);
+            checkBox1.Size = new System.Drawing.Size(108, 19);
             checkBox1.TabIndex = 22;
             checkBox1.Text = "Show Password";
             checkBox1.UseVisualStyleBackColor = true;
@@ -214,54 +214,53 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new System.Drawing.Point(124, 16);
+            label6.Location = new System.Drawing.Point(108, 12);
             label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(18, 20);
+            label6.Size = new System.Drawing.Size(16, 15);
             label6.TabIndex = 21;
             label6.Text = "...";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new System.Drawing.Point(42, 158);
+            label5.Location = new System.Drawing.Point(37, 118);
             label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(70, 20);
+            label5.Size = new System.Drawing.Size(57, 15);
             label5.TabIndex = 19;
             label5.Text = "Password";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(65, 119);
+            label4.Location = new System.Drawing.Point(57, 89);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(46, 20);
+            label4.Size = new System.Drawing.Size(37, 15);
             label4.TabIndex = 18;
             label4.Text = "Login";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(74, 82);
+            label3.Location = new System.Drawing.Point(65, 62);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(35, 20);
+            label3.Size = new System.Drawing.Size(29, 15);
             label3.TabIndex = 17;
             label3.Text = "Port";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(20, 42);
+            label2.Location = new System.Drawing.Point(18, 32);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(94, 20);
+            label2.Size = new System.Drawing.Size(74, 15);
             label2.TabIndex = 16;
             label2.Text = "Server Name";
             // 
             // button11
             // 
-            button11.Location = new System.Drawing.Point(122, 222);
-            button11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            button11.Location = new System.Drawing.Point(107, 166);
             button11.Name = "button11";
-            button11.Size = new System.Drawing.Size(130, 31);
+            button11.Size = new System.Drawing.Size(114, 23);
             button11.TabIndex = 15;
             button11.Text = "Check conection";
             button11.UseVisualStyleBackColor = true;
@@ -269,26 +268,23 @@
             // 
             // textBoxPassword
             // 
-            textBoxPassword.Location = new System.Drawing.Point(120, 154);
-            textBoxPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            textBoxPassword.Location = new System.Drawing.Point(105, 116);
             textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.Size = new System.Drawing.Size(114, 27);
+            textBoxPassword.Size = new System.Drawing.Size(100, 23);
             textBoxPassword.TabIndex = 3;
             // 
             // textBoxLogin
             // 
-            textBoxLogin.Location = new System.Drawing.Point(120, 115);
-            textBoxLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            textBoxLogin.Location = new System.Drawing.Point(105, 86);
             textBoxLogin.Name = "textBoxLogin";
-            textBoxLogin.Size = new System.Drawing.Size(114, 27);
+            textBoxLogin.Size = new System.Drawing.Size(100, 23);
             textBoxLogin.TabIndex = 2;
             // 
             // textBoxPort
             // 
-            textBoxPort.Location = new System.Drawing.Point(120, 78);
-            textBoxPort.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            textBoxPort.Location = new System.Drawing.Point(105, 58);
             textBoxPort.Name = "textBoxPort";
-            textBoxPort.Size = new System.Drawing.Size(53, 27);
+            textBoxPort.Size = new System.Drawing.Size(47, 23);
             textBoxPort.TabIndex = 1;
             // 
             // listViewDatabase
@@ -298,10 +294,9 @@
             listViewDatabase.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { columnHeader1, columnHeader2 });
             listViewDatabase.FullRowSelect = true;
             listViewDatabase.HoverSelection = true;
-            listViewDatabase.Location = new System.Drawing.Point(9, 13);
-            listViewDatabase.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            listViewDatabase.Location = new System.Drawing.Point(8, 10);
             listViewDatabase.Name = "listViewDatabase";
-            listViewDatabase.Size = new System.Drawing.Size(292, 467);
+            listViewDatabase.Size = new System.Drawing.Size(256, 351);
             listViewDatabase.TabIndex = 17;
             listViewDatabase.UseCompatibleStateImageBehavior = false;
             listViewDatabase.View = System.Windows.Forms.View.Details;
@@ -320,9 +315,10 @@
             // 
             picLoader.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             picLoader.Image = Properties.Resources.MEBIB;
-            picLoader.Location = new System.Drawing.Point(107, 183);
+            picLoader.Location = new System.Drawing.Point(94, 137);
+            picLoader.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             picLoader.Name = "picLoader";
-            picLoader.Size = new System.Drawing.Size(92, 83);
+            picLoader.Size = new System.Drawing.Size(80, 62);
             picLoader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             picLoader.TabIndex = 18;
             picLoader.TabStop = false;
@@ -331,10 +327,9 @@
             // checkBoxShowDirectory
             // 
             checkBoxShowDirectory.AutoSize = true;
-            checkBoxShowDirectory.Location = new System.Drawing.Point(327, 456);
-            checkBoxShowDirectory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            checkBoxShowDirectory.Location = new System.Drawing.Point(286, 342);
             checkBoxShowDirectory.Name = "checkBoxShowDirectory";
-            checkBoxShowDirectory.Size = new System.Drawing.Size(132, 24);
+            checkBoxShowDirectory.Size = new System.Drawing.Size(106, 19);
             checkBoxShowDirectory.TabIndex = 23;
             checkBoxShowDirectory.Text = "Show Directory";
             checkBoxShowDirectory.UseVisualStyleBackColor = true;
@@ -343,10 +338,9 @@
             // checkBoxShowMessageInfo
             // 
             checkBoxShowMessageInfo.AutoSize = true;
-            checkBoxShowMessageInfo.Location = new System.Drawing.Point(472, 456);
-            checkBoxShowMessageInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            checkBoxShowMessageInfo.Location = new System.Drawing.Point(413, 342);
             checkBoxShowMessageInfo.Name = "checkBoxShowMessageInfo";
-            checkBoxShowMessageInfo.Size = new System.Drawing.Size(159, 24);
+            checkBoxShowMessageInfo.Size = new System.Drawing.Size(128, 19);
             checkBoxShowMessageInfo.TabIndex = 24;
             checkBoxShowMessageInfo.Text = "Show Message Info";
             checkBoxShowMessageInfo.UseVisualStyleBackColor = true;
@@ -354,9 +348,9 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(673, 517);
+            ClientSize = new System.Drawing.Size(589, 388);
             Controls.Add(checkBoxShowMessageInfo);
             Controls.Add(checkBoxShowDirectory);
             Controls.Add(picLoader);
@@ -368,7 +362,6 @@
             Controls.Add(statusStrip1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
-            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "Form1";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -418,5 +411,6 @@
         private System.Windows.Forms.PictureBox picLoader;
         private System.Windows.Forms.CheckBox checkBoxShowDirectory;
         private System.Windows.Forms.CheckBox checkBoxShowMessageInfo;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
     }
 }
